@@ -1,0 +1,20 @@
+<mat-card *ngIf="bookDetails$ | async as bookDetails;" class="book-card">
+  <mat-card-title>Book Details</mat-card-title>
+  <mat-divider></mat-divider>
+
+  <mat-list>
+    <mat-list-item>
+      <h4 matLine><strong>ID:</strong> {{ bookDetails.id }}</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <h4 matLine><strong>Title:</strong> {{ bookDetails.title }}</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <p matLine><strong>Author:</strong> {{ bookDetails.author }}</p>
+    </mat-list-item>
+    <mat-list-item>
+      <p matLine><strong>Description:</strong> {{ bookDetails.description }}</p>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
+

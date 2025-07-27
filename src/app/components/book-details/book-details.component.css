@@ -1,0 +1,16 @@
+.book-card {
+  margin: 20px;
+  padding: 16px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+mat-list-item {
+  margin-bottom: 8px;
+}
+
+mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}

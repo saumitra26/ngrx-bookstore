@@ -1,0 +1,69 @@
+<div class="formDesign" *ngIf="!isEditMode">
+    <form [formGroup]="saveBookForm"  #formDirective="ngForm" (ngSubmit)="bookAdd(formDirective)" >
+        <mat-form-field>
+            <mat-label>ID</mat-label>
+            <input matInput formControlName="id" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Author</mat-label>
+            <input matInput formControlName="author" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Description</mat-label>
+            <input matInput formControlName="description" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="saveBookForm.invalid">
+            Save Book
+        </button>
+    </form>
+</div>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Titile</th>
+    <th>Autor</th>
+    <th>description</th>
+    <th>description</th>
+  </tr>
+  <tr *ngFor="let book of listofBooks$ |async">
+    <td>{{ book.id }}</td>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.description }}</td>
+    <td>
+      <button mat-button color="primary" (click)="selectBook(book.id)">SelectBook</button>
+      <button mat-button color="primary" (click)="editBook(book)">Edit</button>
+      <button mat-button color="warn" (click)="deleteBook(book.id)">Delete</button>
+    </td>
+  </tr>
+  
+</table>
+<div class="formDesign" *ngIf="isEditMode">
+  <form [formGroup]="saveBookForm">
+    <mat-form-field>
+      <mat-label>ID</mat-label>
+      <input matInput formControlName="id" required />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" required />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="author" required />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="description" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="saveBookForm.invalid" (click)="saveChanges()">
+      Update Book
+    </button>
+    <button mat-button type="button" (click)="cancelEdit()">Cancel</button>
+  </form>
+</div>

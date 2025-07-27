@@ -1,0 +1,64 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A powerful novel about racial injustice in the Deep South."
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian tale about totalitarianism and surveillance."
+    },
+    {
+      "id": "3",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "A classic romance and critique of social class in 19th-century England."
+    },
+    {
+      "id": "4",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "A story of wealth, love, and the American Dream in the 1920s."
+    },
+    {
+      "id": "5",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "description": "An epic sea adventure and exploration of obsession."
+    },
+    {
+      "id": "6",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "description": "A sweeping saga of Russian society during the Napoleonic Wars."
+    },
+    {
+      "id": "7",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "description": "A rebellious teen’s journey through alienation and identity."
+    },
+    {
+      "id": "8",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "description": "An epic fantasy of good versus evil in Middle-earth."
+    },
+    {
+      "id": "9",
+      "title": "Siddhartha",
+      "author": "Hermann Hesse",
+      "description": "A spiritual journey of self-discovery and enlightenment."
+    },
+    {
+      "id": "10",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "description": "A philosophical tale about following your dreams."
+    }
+  ]
+}
