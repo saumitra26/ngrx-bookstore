@@ -16,7 +16,7 @@ describe('BookStoreComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
+//we should work on unit test
   it('should create', () => {
     expect(component).toBeTruthy();
   });
