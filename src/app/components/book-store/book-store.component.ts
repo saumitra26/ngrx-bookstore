@@ -104,7 +104,8 @@ export class BookStoreComponent implements  OnInit {
   selectBook(id:string){
     this.router.navigate(['/bookdetails',id])
   }
-getGitPractice1(){
-  console.log('this is from merge-test');
+getGitPractice(){
+  console.log('This is from merge-test1');
+  let a=4;
   }
 }
