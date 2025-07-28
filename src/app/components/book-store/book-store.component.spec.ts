@@ -16,7 +16,8 @@ describe('BookStoreComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-//we should work on unit test
+//we should work on unit test (here we write new stuff from merge-test branch)
+// this branch from merge-test
   it('should create', () => {
     expect(component).toBeTruthy();
   });
