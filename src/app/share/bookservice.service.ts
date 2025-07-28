@@ -27,6 +27,6 @@ export class BookserviceService {
    return this.http.put<BookModel>(`${this.apiUrl}/${book.id}`, book);
   }
   getGitPractice(){
-  console.log('This is from merge-test1');
+  console.log('This is from merge-test');
   }
 }
