@@ -16,7 +16,8 @@ describe('BookStoreComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-//we should work on unit test
+//we should work on unit test and (added this parte for marge conflit)
+// And this line is coming from merge-test1
   it('should create', () => {
     expect(component).toBeTruthy();
   });
