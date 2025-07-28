@@ -26,4 +26,7 @@ export class BookserviceService {
   updateBook(book:BookModel):Observable<BookModel>{
    return this.http.put<BookModel>(`${this.apiUrl}/${book.id}`, book);
   }
+  getGitPractice(){
+  console.log('This is from merge-test');
+  }
 }
